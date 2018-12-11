@@ -18,21 +18,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1e-8r-WJu">
-                                <rect key="frame" x="168" y="323" width="39" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KOP-Wx-OyP">
+                                <rect key="frame" x="62.5" y="200" width="250" height="267"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6z-ia-zbH">
+                                <rect key="frame" x="25" y="477" width="325" height="30"/>
+                                <color key="backgroundColor" red="0.9172140956" green="0.80723643300000003" blue="0.86274433139999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="openCamera:" destination="fA6-9L-RZK" eventType="touchUpInside" id="WJU-TD-UhV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J08-8j-iv4">
+                                <rect key="frame" x="25" y="517" width="325" height="30"/>
+                                <state key="normal" title="Compare"/>
+                                <connections>
+                                    <action selector="compareButton:" destination="fA6-9L-RZK" eventType="touchUpInside" id="ECn-RZ-Fdr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="S1e-8r-WJu" firstAttribute="centerY" secondItem="7bc-dn-YeF" secondAttribute="centerY" id="GLV-6j-qX2"/>
-                            <constraint firstItem="S1e-8r-WJu" firstAttribute="centerX" secondItem="7bc-dn-YeF" secondAttribute="centerX" id="MNU-La-M5C"/>
+                            <constraint firstItem="KOP-Wx-OyP" firstAttribute="centerX" secondItem="7bc-dn-YeF" secondAttribute="centerX" id="GPP-tv-h70"/>
+                            <constraint firstItem="U3U-SL-yLn" firstAttribute="trailing" secondItem="c6z-ia-zbH" secondAttribute="trailing" constant="25" id="JOf-aC-Fhc"/>
+                            <constraint firstItem="c6z-ia-zbH" firstAttribute="top" secondItem="KOP-Wx-OyP" secondAttribute="bottom" constant="10" id="M73-jV-fzo"/>
+                            <constraint firstItem="J08-8j-iv4" firstAttribute="leading" secondItem="U3U-SL-yLn" secondAttribute="leading" constant="25" id="P76-9u-gOS"/>
+                            <constraint firstItem="KOP-Wx-OyP" firstAttribute="width" secondItem="7bc-dn-YeF" secondAttribute="width" multiplier="1:1.5" id="Q9Q-zr-K8h"/>
+                            <constraint firstItem="KOP-Wx-OyP" firstAttribute="centerY" secondItem="7bc-dn-YeF" secondAttribute="centerY" id="Vlv-sM-EDX"/>
+                            <constraint firstItem="c6z-ia-zbH" firstAttribute="leading" secondItem="U3U-SL-yLn" secondAttribute="leading" constant="25" id="bqv-n2-aqQ"/>
+                            <constraint firstItem="J08-8j-iv4" firstAttribute="top" secondItem="c6z-ia-zbH" secondAttribute="bottom" constant="10" id="isp-6z-JFh"/>
+                            <constraint firstItem="U3U-SL-yLn" firstAttribute="trailing" secondItem="J08-8j-iv4" secondAttribute="trailing" constant="25" id="kxt-R2-IyU"/>
+                            <constraint firstItem="KOP-Wx-OyP" firstAttribute="height" secondItem="7bc-dn-YeF" secondAttribute="height" multiplier="1:2.5" id="pcn-e7-wZD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="U3U-SL-yLn"/>
                     </view>
                     <navigationItem key="navigationItem" id="LJ7-5B-rXn"/>
+                    <connections>
+                        <outlet property="imageShow" destination="KOP-Wx-OyP" id="3Ex-U6-SlK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DWA-wn-3nI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

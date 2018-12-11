@@ -1,11 +1,3 @@
-//
-//  MainVC.swift
-//  Backtohome
-//
-//  Created by chayarak on 11/12/2561 BE.
-//  Copyright © 2561 chayarak. All rights reserved.
-//
-
 import UIKit
 
 protocol MainVCProtocol: BaseVCProtocol {
@@ -15,17 +7,44 @@ protocol MainVCProtocol: BaseVCProtocol {
 class MainVC: BaseVC {
     
     lazy var presenter = MainPresenter(self)
+    @IBOutlet weak var imageShow: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.compare(UIImage(named: "") ?? UIImage())
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func openCamera(_ sender: UIButton) {
+        getCamera()
+    }
+    
+    @IBAction func compareButton(_ sender: UIButton) {
+        presenter.compare(imageShow.image ?? UIImage())
+    }
+    
+    func getCamera() {
+        let vc = UIImagePickerController()
+        vc.sourceType = .camera
+        vc.allowsEditing = true
+        vc.delegate = self
+        present(vc, animated: true)
+    }
+    
 }
 
 extension MainVC: MainVCProtocol {
+    
+}
+
+extension MainVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        imageShow.image = image
+        dismiss(animated:true, completion: nil)
+    }
     
 }

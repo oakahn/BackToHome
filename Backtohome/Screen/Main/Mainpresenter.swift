@@ -3,6 +3,7 @@ import Alamofire
 
 protocol MainPresenterProtocol {
     func compare(_ image: UIImage)
+    func searchToFirebase()
 }
 
 class MainPresenter {
@@ -17,7 +18,7 @@ class MainPresenter {
 extension MainPresenter: MainPresenterProtocol {
     
     func compare(_ image: UIImage) {
-        let imageSearch = UIImageJPEGRepresentation(image, 0.5)?.base64EncodedString()
+        let imageSearch = UIImageJPEGRepresentation(image, 0.6)?.base64EncodedString()
         guard let imgSearch = imageSearch else { return }
         
         let urlCompare = "https://api-us.faceplusplus.com/facepp/v3/search"
@@ -47,5 +48,9 @@ extension MainPresenter: MainPresenterProtocol {
             }
             
         }
+    }
+    
+    func searchToFirebase() {
+        
     }
 }

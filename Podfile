@@ -10,5 +10,6 @@ target 'Backtohome' do
   	pod 'AlamofireImage', '~> 3.3'
   	pod 'ObjectMapper', '~> 3.2'
   	pod 'AlamofireObjectMapper', '~> 5.0'
+	pod 'Firebase/Core'
 
 end
