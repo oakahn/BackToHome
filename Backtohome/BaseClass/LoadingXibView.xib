@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kanit-Regular.ttf">
+            <string>Kanit-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingXibView" customModule="BNKApp" customModuleProvider="target">
+            <connections>
+                <outlet property="acitivityIndicatorViews" destination="YUS-pX-Uxh" id="3hu-Ku-GSi"/>
+                <outlet property="activityDescriptionLabels" destination="wKF-oC-Ly6" id="Bjd-Ti-f8T"/>
+                <outlet property="backdropImages" destination="903-uF-x1w" id="NvF-K2-0vQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MrN-Zn-RyO">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="743"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="903-uF-x1w">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="743"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dZc-M4-Fyw">
+                    <rect key="frame" x="0.0" y="342.5" width="375" height="58"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="YUS-pX-Uxh">
+                            <rect key="frame" x="169" y="0.0" width="37" height="37"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="color" red="0.76461142301559448" green="0.5980379581451416" blue="0.75295311212539673" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKF-oC-Ly6">
+                            <rect key="frame" x="170" y="37" width="35" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.124389492" green="0.124984391" blue="0.54513323309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="dropShadow" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="903-uF-x1w" firstAttribute="leading" secondItem="4lq-Ea-VzH" secondAttribute="leading" id="DDa-Ll-ioM"/>
+                <constraint firstItem="903-uF-x1w" firstAttribute="bottom" secondItem="4lq-Ea-VzH" secondAttribute="bottom" id="JCF-Hy-H2d"/>
+                <constraint firstItem="dZc-M4-Fyw" firstAttribute="centerX" secondItem="MrN-Zn-RyO" secondAttribute="centerX" id="Qfg-4O-OOH"/>
+                <constraint firstItem="903-uF-x1w" firstAttribute="top" secondItem="MrN-Zn-RyO" secondAttribute="top" id="Sbr-3C-CXd"/>
+                <constraint firstItem="dZc-M4-Fyw" firstAttribute="centerY" secondItem="MrN-Zn-RyO" secondAttribute="centerY" id="Xa6-q9-wym"/>
+                <constraint firstItem="4lq-Ea-VzH" firstAttribute="trailing" secondItem="dZc-M4-Fyw" secondAttribute="trailing" id="kgX-ql-7xk"/>
+                <constraint firstItem="dZc-M4-Fyw" firstAttribute="leading" secondItem="4lq-Ea-VzH" secondAttribute="leading" id="tFz-DF-Z3d"/>
+                <constraint firstItem="903-uF-x1w" firstAttribute="trailing" secondItem="4lq-Ea-VzH" secondAttribute="trailing" id="xYb-xG-OZ6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="4lq-Ea-VzH"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="dropShadow" value="NO"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="60.5" y="-211.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backdrop" width="40" height="40"/>
+    </resources>
+</document>
