@@ -46,7 +46,8 @@
 		9C3130CC21BF65E300B67CC0 /* SplashScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3130CB21BF65E300B67CC0 /* SplashScreenRouter.swift */; };
 		9C3130CF21BF675B00B67CC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130CE21BF675B00B67CC0 /* Main.storyboard */; };
 		9C3130D121BF679500B67CC0 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3130D021BF679500B67CC0 /* MainVC.swift */; };
-		9C3130D421BF6E2B00B67CC0 /* FaceDetect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3130D321BF6E2B00B67CC0 /* FaceDetect.swift */; };
+		9C3130D421BF6E2B00B67CC0 /* FaceSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3130D321BF6E2B00B67CC0 /* FaceSearch.swift */; };
+		9C3130D821BF7E6100B67CC0 /* Mainpresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3130D721BF7E6100B67CC0 /* Mainpresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,7 +93,8 @@
 		9C3130CB21BF65E300B67CC0 /* SplashScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenRouter.swift; sourceTree = "<group>"; };
 		9C3130CE21BF675B00B67CC0 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9C3130D021BF679500B67CC0 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		9C3130D321BF6E2B00B67CC0 /* FaceDetect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetect.swift; sourceTree = "<group>"; };
+		9C3130D321BF6E2B00B67CC0 /* FaceSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceSearch.swift; sourceTree = "<group>"; };
+		9C3130D721BF7E6100B67CC0 /* Mainpresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mainpresenter.swift; sourceTree = "<group>"; };
 		FE0005F873C19A38DB192FCC /* Pods-Backtohome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backtohome.release.xcconfig"; path = "Pods/Target Support Files/Pods-Backtohome/Pods-Backtohome.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -226,6 +228,7 @@
 			children = (
 				9C3130CE21BF675B00B67CC0 /* Main.storyboard */,
 				9C3130D021BF679500B67CC0 /* MainVC.swift */,
+				9C3130D721BF7E6100B67CC0 /* Mainpresenter.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -233,7 +236,7 @@
 		9C3130D221BF6E1200B67CC0 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
-				9C3130D321BF6E2B00B67CC0 /* FaceDetect.swift */,
+				9C3130D321BF6E2B00B67CC0 /* FaceSearch.swift */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -386,8 +389,9 @@
 				9C31309A21BF62E300B67CC0 /* LoadingXibView.swift in Sources */,
 				9C31306621BF5F8000B67CC0 /* AppDelegate.swift in Sources */,
 				9C31309E21BF62E300B67CC0 /* ScreenError.swift in Sources */,
-				9C3130D421BF6E2B00B67CC0 /* FaceDetect.swift in Sources */,
+				9C3130D421BF6E2B00B67CC0 /* FaceSearch.swift in Sources */,
 				9C31309921BF62E300B67CC0 /* BaseRouter.swift in Sources */,
+				9C3130D821BF7E6100B67CC0 /* Mainpresenter.swift in Sources */,
 				9C31309C21BF62E300B67CC0 /* Font.swift in Sources */,
 				9C31308021BF61D800B67CC0 /* SplashScreenVC.swift in Sources */,
 				9C31309B21BF62E300B67CC0 /* BaseXibView.swift in Sources */,

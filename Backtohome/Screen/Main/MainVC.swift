@@ -14,8 +14,11 @@ protocol MainVCProtocol: BaseVCProtocol {
 
 class MainVC: BaseVC {
     
+    lazy var presenter = MainPresenter(self)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.compare(UIImage(named: "") ?? UIImage())
     }
     
     override func didReceiveMemoryWarning() {
