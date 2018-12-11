@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol SplashScreenProtocol {
+protocol SplashScreenProtocol: BaseVCProtocol {
     
 }
 

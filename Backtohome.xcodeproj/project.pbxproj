@@ -13,14 +13,39 @@
 		9C31306B21BF5F8000B67CC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C31306921BF5F8000B67CC0 /* Main.storyboard */; };
 		9C31306D21BF5F8200B67CC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C31306C21BF5F8200B67CC0 /* Assets.xcassets */; };
 		9C31307021BF5F8200B67CC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C31306E21BF5F8200B67CC0 /* LaunchScreen.storyboard */; };
-		9C31307A21BF616D00B67CC0 /* LoadingXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C31307821BF616D00B67CC0 /* LoadingXibView.swift */; };
-		9C31307B21BF616D00B67CC0 /* LoadingXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C31307921BF616D00B67CC0 /* LoadingXibView.xib */; };
 		9C31307E21BF61C800B67CC0 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C31307D21BF61C800B67CC0 /* SplashScreen.storyboard */; };
 		9C31308021BF61D800B67CC0 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C31307F21BF61D800B67CC0 /* SplashScreenVC.swift */; };
-		9C31308521BF621400B67CC0 /* BaseXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C31308121BF621400B67CC0 /* BaseXibView.swift */; };
-		9C31308621BF621400B67CC0 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C31308221BF621400B67CC0 /* BasePresenter.swift */; };
-		9C31308721BF621400B67CC0 /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C31308321BF621400B67CC0 /* BaseClass.swift */; };
-		9C31308821BF621400B67CC0 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C31308421BF621400B67CC0 /* BaseRouter.swift */; };
+		9C31309821BF62E300B67CC0 /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C31308D21BF62E300B67CC0 /* BaseClass.swift */; };
+		9C31309921BF62E300B67CC0 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C31308E21BF62E300B67CC0 /* BaseRouter.swift */; };
+		9C31309A21BF62E300B67CC0 /* LoadingXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C31308F21BF62E300B67CC0 /* LoadingXibView.swift */; };
+		9C31309B21BF62E300B67CC0 /* BaseXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C31309021BF62E300B67CC0 /* BaseXibView.swift */; };
+		9C31309C21BF62E300B67CC0 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C31309121BF62E300B67CC0 /* Font.swift */; };
+		9C31309D21BF62E300B67CC0 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C31309221BF62E300B67CC0 /* Alert.swift */; };
+		9C31309E21BF62E300B67CC0 /* ScreenError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C31309321BF62E300B67CC0 /* ScreenError.swift */; };
+		9C31309F21BF62E300B67CC0 /* LoadingXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C31309421BF62E300B67CC0 /* LoadingXibView.xib */; };
+		9C3130A021BF62E300B67CC0 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C31309521BF62E300B67CC0 /* Color.swift */; };
+		9C3130A121BF62E300B67CC0 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C31309621BF62E300B67CC0 /* BasePresenter.swift */; };
+		9C3130A221BF62E300B67CC0 /* UiApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C31309721BF62E300B67CC0 /* UiApplication.swift */; };
+		9C3130B721BF64B600B67CC0 /* Kanit-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130A421BF64B500B67CC0 /* Kanit-SemiBoldItalic.ttf */; };
+		9C3130B821BF64B600B67CC0 /* Kanit-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130A521BF64B500B67CC0 /* Kanit-Regular.ttf */; };
+		9C3130B921BF64B600B67CC0 /* Kanit-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130A621BF64B500B67CC0 /* Kanit-BoldItalic.ttf */; };
+		9C3130BA21BF64B600B67CC0 /* Kanit-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130A721BF64B500B67CC0 /* Kanit-MediumItalic.ttf */; };
+		9C3130BB21BF64B600B67CC0 /* Kanit-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130A821BF64B500B67CC0 /* Kanit-ExtraBold.ttf */; };
+		9C3130BC21BF64B600B67CC0 /* Kanit-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130A921BF64B500B67CC0 /* Kanit-ExtraLightItalic.ttf */; };
+		9C3130BD21BF64B600B67CC0 /* Kanit-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130AA21BF64B500B67CC0 /* Kanit-ThinItalic.ttf */; };
+		9C3130BE21BF64B600B67CC0 /* Kanit-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130AB21BF64B500B67CC0 /* Kanit-BlackItalic.ttf */; };
+		9C3130BF21BF64B600B67CC0 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130AC21BF64B500B67CC0 /* OFL.txt */; };
+		9C3130C021BF64B600B67CC0 /* Kanit-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130AD21BF64B500B67CC0 /* Kanit-Bold.ttf */; };
+		9C3130C121BF64B600B67CC0 /* Kanit-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130AE21BF64B600B67CC0 /* Kanit-Italic.ttf */; };
+		9C3130C221BF64B600B67CC0 /* Kanit-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130AF21BF64B600B67CC0 /* Kanit-Light.ttf */; };
+		9C3130C321BF64B600B67CC0 /* Kanit-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130B021BF64B600B67CC0 /* Kanit-Black.ttf */; };
+		9C3130C421BF64B600B67CC0 /* Kanit-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130B121BF64B600B67CC0 /* Kanit-LightItalic.ttf */; };
+		9C3130C521BF64B600B67CC0 /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130B221BF64B600B67CC0 /* Kanit-Medium.ttf */; };
+		9C3130C621BF64B600B67CC0 /* Kanit-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130B321BF64B600B67CC0 /* Kanit-ExtraLight.ttf */; };
+		9C3130C721BF64B600B67CC0 /* Kanit-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130B421BF64B600B67CC0 /* Kanit-ExtraBoldItalic.ttf */; };
+		9C3130C821BF64B600B67CC0 /* Kanit-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130B521BF64B600B67CC0 /* Kanit-SemiBold.ttf */; };
+		9C3130C921BF64B600B67CC0 /* Kanit-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130B621BF64B600B67CC0 /* Kanit-Thin.ttf */; };
+		9C3130CC21BF65E300B67CC0 /* SplashScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3130CB21BF65E300B67CC0 /* SplashScreenRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,14 +58,39 @@
 		9C31306C21BF5F8200B67CC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C31306F21BF5F8200B67CC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C31307121BF5F8200B67CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C31307821BF616D00B67CC0 /* LoadingXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingXibView.swift; sourceTree = "<group>"; };
-		9C31307921BF616D00B67CC0 /* LoadingXibView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingXibView.xib; sourceTree = "<group>"; };
 		9C31307D21BF61C800B67CC0 /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
 		9C31307F21BF61D800B67CC0 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
-		9C31308121BF621400B67CC0 /* BaseXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseXibView.swift; sourceTree = "<group>"; };
-		9C31308221BF621400B67CC0 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
-		9C31308321BF621400B67CC0 /* BaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
-		9C31308421BF621400B67CC0 /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		9C31308D21BF62E300B67CC0 /* BaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
+		9C31308E21BF62E300B67CC0 /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		9C31308F21BF62E300B67CC0 /* LoadingXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingXibView.swift; sourceTree = "<group>"; };
+		9C31309021BF62E300B67CC0 /* BaseXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseXibView.swift; sourceTree = "<group>"; };
+		9C31309121BF62E300B67CC0 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		9C31309221BF62E300B67CC0 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		9C31309321BF62E300B67CC0 /* ScreenError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenError.swift; sourceTree = "<group>"; };
+		9C31309421BF62E300B67CC0 /* LoadingXibView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingXibView.xib; sourceTree = "<group>"; };
+		9C31309521BF62E300B67CC0 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9C31309621BF62E300B67CC0 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		9C31309721BF62E300B67CC0 /* UiApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiApplication.swift; sourceTree = "<group>"; };
+		9C3130A421BF64B500B67CC0 /* Kanit-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		9C3130A521BF64B500B67CC0 /* Kanit-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Regular.ttf"; sourceTree = "<group>"; };
+		9C3130A621BF64B500B67CC0 /* Kanit-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-BoldItalic.ttf"; sourceTree = "<group>"; };
+		9C3130A721BF64B500B67CC0 /* Kanit-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-MediumItalic.ttf"; sourceTree = "<group>"; };
+		9C3130A821BF64B500B67CC0 /* Kanit-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-ExtraBold.ttf"; sourceTree = "<group>"; };
+		9C3130A921BF64B500B67CC0 /* Kanit-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		9C3130AA21BF64B500B67CC0 /* Kanit-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-ThinItalic.ttf"; sourceTree = "<group>"; };
+		9C3130AB21BF64B500B67CC0 /* Kanit-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-BlackItalic.ttf"; sourceTree = "<group>"; };
+		9C3130AC21BF64B500B67CC0 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		9C3130AD21BF64B500B67CC0 /* Kanit-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Bold.ttf"; sourceTree = "<group>"; };
+		9C3130AE21BF64B600B67CC0 /* Kanit-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Italic.ttf"; sourceTree = "<group>"; };
+		9C3130AF21BF64B600B67CC0 /* Kanit-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Light.ttf"; sourceTree = "<group>"; };
+		9C3130B021BF64B600B67CC0 /* Kanit-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Black.ttf"; sourceTree = "<group>"; };
+		9C3130B121BF64B600B67CC0 /* Kanit-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-LightItalic.ttf"; sourceTree = "<group>"; };
+		9C3130B221BF64B600B67CC0 /* Kanit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Medium.ttf"; sourceTree = "<group>"; };
+		9C3130B321BF64B600B67CC0 /* Kanit-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-ExtraLight.ttf"; sourceTree = "<group>"; };
+		9C3130B421BF64B600B67CC0 /* Kanit-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		9C3130B521BF64B600B67CC0 /* Kanit-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-SemiBold.ttf"; sourceTree = "<group>"; };
+		9C3130B621BF64B600B67CC0 /* Kanit-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Thin.ttf"; sourceTree = "<group>"; };
+		9C3130CB21BF65E300B67CC0 /* SplashScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenRouter.swift; sourceTree = "<group>"; };
 		FE0005F873C19A38DB192FCC /* Pods-Backtohome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backtohome.release.xcconfig"; path = "Pods/Target Support Files/Pods-Backtohome/Pods-Backtohome.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +144,8 @@
 		9C31306421BF5F8000B67CC0 /* Backtohome */ = {
 			isa = PBXGroup;
 			children = (
-				9C31307C21BF61A900B67CC0 /* SplashScreen */,
+				9C3130CA21BF64D000B67CC0 /* Screen */,
+				9C3130A321BF64A900B67CC0 /* Font */,
 				9C31307721BF615600B67CC0 /* BaseClass */,
 				9C31306521BF5F8000B67CC0 /* AppDelegate.swift */,
 				9C31306721BF5F8000B67CC0 /* ViewController.swift */,
@@ -109,12 +160,17 @@
 		9C31307721BF615600B67CC0 /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
-				9C31308321BF621400B67CC0 /* BaseClass.swift */,
-				9C31308221BF621400B67CC0 /* BasePresenter.swift */,
-				9C31308421BF621400B67CC0 /* BaseRouter.swift */,
-				9C31308121BF621400B67CC0 /* BaseXibView.swift */,
-				9C31307821BF616D00B67CC0 /* LoadingXibView.swift */,
-				9C31307921BF616D00B67CC0 /* LoadingXibView.xib */,
+				9C31309221BF62E300B67CC0 /* Alert.swift */,
+				9C31308D21BF62E300B67CC0 /* BaseClass.swift */,
+				9C31309621BF62E300B67CC0 /* BasePresenter.swift */,
+				9C31308E21BF62E300B67CC0 /* BaseRouter.swift */,
+				9C31309021BF62E300B67CC0 /* BaseXibView.swift */,
+				9C31309521BF62E300B67CC0 /* Color.swift */,
+				9C31309121BF62E300B67CC0 /* Font.swift */,
+				9C31308F21BF62E300B67CC0 /* LoadingXibView.swift */,
+				9C31309421BF62E300B67CC0 /* LoadingXibView.xib */,
+				9C31309321BF62E300B67CC0 /* ScreenError.swift */,
+				9C31309721BF62E300B67CC0 /* UiApplication.swift */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -124,8 +180,43 @@
 			children = (
 				9C31307D21BF61C800B67CC0 /* SplashScreen.storyboard */,
 				9C31307F21BF61D800B67CC0 /* SplashScreenVC.swift */,
+				9C3130CB21BF65E300B67CC0 /* SplashScreenRouter.swift */,
 			);
 			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		9C3130A321BF64A900B67CC0 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				9C3130B021BF64B600B67CC0 /* Kanit-Black.ttf */,
+				9C3130AB21BF64B500B67CC0 /* Kanit-BlackItalic.ttf */,
+				9C3130AD21BF64B500B67CC0 /* Kanit-Bold.ttf */,
+				9C3130A621BF64B500B67CC0 /* Kanit-BoldItalic.ttf */,
+				9C3130A821BF64B500B67CC0 /* Kanit-ExtraBold.ttf */,
+				9C3130B421BF64B600B67CC0 /* Kanit-ExtraBoldItalic.ttf */,
+				9C3130B321BF64B600B67CC0 /* Kanit-ExtraLight.ttf */,
+				9C3130A921BF64B500B67CC0 /* Kanit-ExtraLightItalic.ttf */,
+				9C3130AE21BF64B600B67CC0 /* Kanit-Italic.ttf */,
+				9C3130AF21BF64B600B67CC0 /* Kanit-Light.ttf */,
+				9C3130B121BF64B600B67CC0 /* Kanit-LightItalic.ttf */,
+				9C3130B221BF64B600B67CC0 /* Kanit-Medium.ttf */,
+				9C3130A721BF64B500B67CC0 /* Kanit-MediumItalic.ttf */,
+				9C3130A521BF64B500B67CC0 /* Kanit-Regular.ttf */,
+				9C3130B521BF64B600B67CC0 /* Kanit-SemiBold.ttf */,
+				9C3130A421BF64B500B67CC0 /* Kanit-SemiBoldItalic.ttf */,
+				9C3130B621BF64B600B67CC0 /* Kanit-Thin.ttf */,
+				9C3130AA21BF64B500B67CC0 /* Kanit-ThinItalic.ttf */,
+				9C3130AC21BF64B500B67CC0 /* OFL.txt */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		9C3130CA21BF64D000B67CC0 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				9C31307C21BF61A900B67CC0 /* SplashScreen */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,11 +279,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3130BF21BF64B600B67CC0 /* OFL.txt in Resources */,
 				9C31307021BF5F8200B67CC0 /* LaunchScreen.storyboard in Resources */,
+				9C3130BA21BF64B600B67CC0 /* Kanit-MediumItalic.ttf in Resources */,
+				9C31309F21BF62E300B67CC0 /* LoadingXibView.xib in Resources */,
+				9C3130C621BF64B600B67CC0 /* Kanit-ExtraLight.ttf in Resources */,
 				9C31306D21BF5F8200B67CC0 /* Assets.xcassets in Resources */,
+				9C3130B921BF64B600B67CC0 /* Kanit-BoldItalic.ttf in Resources */,
+				9C3130C121BF64B600B67CC0 /* Kanit-Italic.ttf in Resources */,
 				9C31306B21BF5F8000B67CC0 /* Main.storyboard in Resources */,
+				9C3130C221BF64B600B67CC0 /* Kanit-Light.ttf in Resources */,
+				9C3130BB21BF64B600B67CC0 /* Kanit-ExtraBold.ttf in Resources */,
+				9C3130C421BF64B600B67CC0 /* Kanit-LightItalic.ttf in Resources */,
+				9C3130B821BF64B600B67CC0 /* Kanit-Regular.ttf in Resources */,
+				9C3130BC21BF64B600B67CC0 /* Kanit-ExtraLightItalic.ttf in Resources */,
+				9C3130C321BF64B600B67CC0 /* Kanit-Black.ttf in Resources */,
+				9C3130C821BF64B600B67CC0 /* Kanit-SemiBold.ttf in Resources */,
+				9C3130BD21BF64B600B67CC0 /* Kanit-ThinItalic.ttf in Resources */,
+				9C3130C921BF64B600B67CC0 /* Kanit-Thin.ttf in Resources */,
 				9C31307E21BF61C800B67CC0 /* SplashScreen.storyboard in Resources */,
-				9C31307B21BF616D00B67CC0 /* LoadingXibView.xib in Resources */,
+				9C3130C021BF64B600B67CC0 /* Kanit-Bold.ttf in Resources */,
+				9C3130C721BF64B600B67CC0 /* Kanit-ExtraBoldItalic.ttf in Resources */,
+				9C3130C521BF64B600B67CC0 /* Kanit-Medium.ttf in Resources */,
+				9C3130BE21BF64B600B67CC0 /* Kanit-BlackItalic.ttf in Resources */,
+				9C3130B721BF64B600B67CC0 /* Kanit-SemiBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,14 +358,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C31308521BF621400B67CC0 /* BaseXibView.swift in Sources */,
-				9C31308621BF621400B67CC0 /* BasePresenter.swift in Sources */,
+				9C31309D21BF62E300B67CC0 /* Alert.swift in Sources */,
+				9C3130A121BF62E300B67CC0 /* BasePresenter.swift in Sources */,
 				9C31306821BF5F8000B67CC0 /* ViewController.swift in Sources */,
-				9C31307A21BF616D00B67CC0 /* LoadingXibView.swift in Sources */,
-				9C31308721BF621400B67CC0 /* BaseClass.swift in Sources */,
+				9C3130A021BF62E300B67CC0 /* Color.swift in Sources */,
+				9C3130A221BF62E300B67CC0 /* UiApplication.swift in Sources */,
+				9C3130CC21BF65E300B67CC0 /* SplashScreenRouter.swift in Sources */,
+				9C31309A21BF62E300B67CC0 /* LoadingXibView.swift in Sources */,
 				9C31306621BF5F8000B67CC0 /* AppDelegate.swift in Sources */,
+				9C31309E21BF62E300B67CC0 /* ScreenError.swift in Sources */,
+				9C31309921BF62E300B67CC0 /* BaseRouter.swift in Sources */,
+				9C31309C21BF62E300B67CC0 /* Font.swift in Sources */,
 				9C31308021BF61D800B67CC0 /* SplashScreenVC.swift in Sources */,
-				9C31308821BF621400B67CC0 /* BaseRouter.swift in Sources */,
+				9C31309B21BF62E300B67CC0 /* BaseXibView.swift in Sources */,
+				9C31309821BF62E300B67CC0 /* BaseClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +527,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Backtohome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -430,7 +546,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Backtohome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -11,14 +11,10 @@ import UIKit
 
 
 class BaseRouter {
-    let home = "Home"
-    let homeTab = "HomeTabBar"
-    let historyMember = "HistoryMember"
+    let main = "Main"
     
     let routes: [String: String] = [
-        "Home": "HomeVC",
-        "HomeTabBar": "HomeTabBarVC",
-        "HistoryMember": "HistoryMemberVC"
+        "Main": "MainVC",
     ]
     
     internal weak var viewController: UIViewController?
