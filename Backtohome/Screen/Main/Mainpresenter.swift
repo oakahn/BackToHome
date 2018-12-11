@@ -1,5 +1,6 @@
 import Foundation
 import Alamofire
+import Firebase
 
 protocol MainPresenterProtocol {
     func compare(_ image: UIImage)
@@ -9,6 +10,7 @@ protocol MainPresenterProtocol {
 class MainPresenter {
     
     var view: MainVCProtocol?
+    var database: DatabaseReference?
     
     init(_ view: MainVCProtocol) {
         self.view = view
