@@ -12,9 +12,11 @@ import UIKit
 
 class BaseRouter {
     let main = "Main"
+    let result = "Result"
     
     let routes: [String: String] = [
         "Main": "MainVC",
+        "Result": "ResultVC"
     ]
     
     internal weak var viewController: UIViewController?

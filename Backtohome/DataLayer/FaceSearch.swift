@@ -22,7 +22,7 @@ class FaceSearch: Mappable {
 
 class Results: Mappable {
     
-    var confidence: String?
+    var confidence: Float?
     var user_id: String?
     var face_token: String?
     

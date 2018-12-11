@@ -47,8 +47,11 @@
 		9C3130CF21BF675B00B67CC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130CE21BF675B00B67CC0 /* Main.storyboard */; };
 		9C3130D121BF679500B67CC0 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3130D021BF679500B67CC0 /* MainVC.swift */; };
 		9C3130D421BF6E2B00B67CC0 /* FaceSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3130D321BF6E2B00B67CC0 /* FaceSearch.swift */; };
-		9C3130D821BF7E6100B67CC0 /* Mainpresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3130D721BF7E6100B67CC0 /* Mainpresenter.swift */; };
+		9C3130D821BF7E6100B67CC0 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3130D721BF7E6100B67CC0 /* MainPresenter.swift */; };
 		9C3130DA21BFA59400B67CC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130D921BFA59400B67CC0 /* GoogleService-Info.plist */; };
+		9C3130F121BFD60600B67CC0 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3130F021BFD60600B67CC0 /* MainRouter.swift */; };
+		9C3130F321BFD67400B67CC0 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130F221BFD67400B67CC0 /* Result.storyboard */; };
+		9C3130F521BFD69700B67CC0 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3130F421BFD69700B67CC0 /* ResultVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,8 +98,11 @@
 		9C3130CE21BF675B00B67CC0 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9C3130D021BF679500B67CC0 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		9C3130D321BF6E2B00B67CC0 /* FaceSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceSearch.swift; sourceTree = "<group>"; };
-		9C3130D721BF7E6100B67CC0 /* Mainpresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mainpresenter.swift; sourceTree = "<group>"; };
+		9C3130D721BF7E6100B67CC0 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		9C3130D921BFA59400B67CC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9C3130F021BFD60600B67CC0 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		9C3130F221BFD67400B67CC0 /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
+		9C3130F421BFD69700B67CC0 /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
 		FE0005F873C19A38DB192FCC /* Pods-Backtohome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backtohome.release.xcconfig"; path = "Pods/Target Support Files/Pods-Backtohome/Pods-Backtohome.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,6 +226,7 @@
 		9C3130CA21BF64D000B67CC0 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				9C3130EF21BFD51700B67CC0 /* Result */,
 				9C3130CD21BF674400B67CC0 /* Main */,
 				9C31307C21BF61A900B67CC0 /* SplashScreen */,
 			);
@@ -231,7 +238,8 @@
 			children = (
 				9C3130CE21BF675B00B67CC0 /* Main.storyboard */,
 				9C3130D021BF679500B67CC0 /* MainVC.swift */,
-				9C3130D721BF7E6100B67CC0 /* Mainpresenter.swift */,
+				9C3130D721BF7E6100B67CC0 /* MainPresenter.swift */,
+				9C3130F021BFD60600B67CC0 /* MainRouter.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -242,6 +250,15 @@
 				9C3130D321BF6E2B00B67CC0 /* FaceSearch.swift */,
 			);
 			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		9C3130EF21BFD51700B67CC0 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				9C3130F221BFD67400B67CC0 /* Result.storyboard */,
+				9C3130F421BFD69700B67CC0 /* ResultVC.swift */,
+			);
+			path = Result;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +346,7 @@
 				9C3130C521BF64B600B67CC0 /* Kanit-Medium.ttf in Resources */,
 				9C3130BE21BF64B600B67CC0 /* Kanit-BlackItalic.ttf in Resources */,
 				9C3130B721BF64B600B67CC0 /* Kanit-SemiBoldItalic.ttf in Resources */,
+				9C3130F321BFD67400B67CC0 /* Result.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,15 +411,17 @@
 				9C31309D21BF62E300B67CC0 /* Alert.swift in Sources */,
 				9C3130D121BF679500B67CC0 /* MainVC.swift in Sources */,
 				9C3130A121BF62E300B67CC0 /* BasePresenter.swift in Sources */,
+				9C3130F121BFD60600B67CC0 /* MainRouter.swift in Sources */,
 				9C3130A021BF62E300B67CC0 /* Color.swift in Sources */,
 				9C3130A221BF62E300B67CC0 /* UiApplication.swift in Sources */,
 				9C3130CC21BF65E300B67CC0 /* SplashScreenRouter.swift in Sources */,
+				9C3130F521BFD69700B67CC0 /* ResultVC.swift in Sources */,
 				9C31309A21BF62E300B67CC0 /* LoadingXibView.swift in Sources */,
 				9C31306621BF5F8000B67CC0 /* AppDelegate.swift in Sources */,
 				9C31309E21BF62E300B67CC0 /* ScreenError.swift in Sources */,
 				9C3130D421BF6E2B00B67CC0 /* FaceSearch.swift in Sources */,
 				9C31309921BF62E300B67CC0 /* BaseRouter.swift in Sources */,
-				9C3130D821BF7E6100B67CC0 /* Mainpresenter.swift in Sources */,
+				9C3130D821BF7E6100B67CC0 /* MainPresenter.swift in Sources */,
 				9C31309C21BF62E300B67CC0 /* Font.swift in Sources */,
 				9C31308021BF61D800B67CC0 /* SplashScreenVC.swift in Sources */,
 				9C31309B21BF62E300B67CC0 /* BaseXibView.swift in Sources */,
@@ -547,7 +567,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D29GP635V;
 				INFOPLIST_FILE = Backtohome/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Backtohome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -563,7 +586,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D29GP635V;
 				INFOPLIST_FILE = Backtohome/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Backtohome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

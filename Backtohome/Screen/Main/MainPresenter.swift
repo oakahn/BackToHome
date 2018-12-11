@@ -5,7 +5,7 @@ import ObjectMapper
 
 protocol MainPresenterProtocol {
     func compare(_ image: UIImage)
-    func searchToFirebase()
+    func searchToFirebase(child: String)
 }
 
 class MainPresenter {
@@ -48,9 +48,7 @@ extension MainPresenter: MainPresenterProtocol {
                         guard let results = detail.results else {
                             return
                         }
-                        print(detail)
-                        print(results)
-                        print(results[0].confidence)
+                        self.searchToFirebase(child: results[0].face_token ?? "")
                     }
                 }
                 
@@ -61,12 +59,13 @@ extension MainPresenter: MainPresenterProtocol {
         }
     }
     
-    func searchToFirebase() {
-        dbReference?.observeSingleEvent(of: .value, with: { (snapshot) in
+    func searchToFirebase(child: String) {
+        dbReference?.child(child).observeSingleEvent(of: .value, with: { (snapshot) in
             guard var dictionary = snapshot.value as? [String] else {
                 return
             }
-            self.dbReference?.child("f437fd2c440480150d3f1b703a29973a").setValue(["P'maii", "Noomaii", "Todsob"])
+            self.view?.redirectToResultPage(listData: dictionary[0])
+//            self.dbReference?.child("e73189e5fea7f0084021e68320a4e958").setValue(["Ice", "xx/xx/2538"])
         })
     }
 }

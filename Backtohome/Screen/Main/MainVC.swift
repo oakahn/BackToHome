@@ -1,12 +1,13 @@
 import UIKit
 
 protocol MainVCProtocol: BaseVCProtocol {
-    
+    func redirectToResultPage(listData: String)
 }
 
 class MainVC: BaseVC {
     
     lazy var presenter = MainPresenter(self)
+    lazy var router = MainRouter(self)
     @IBOutlet weak var imageShow: UIImageView!
     
     override func viewDidLoad() {
@@ -22,6 +23,7 @@ class MainVC: BaseVC {
     }
     
     @IBAction func compareButton(_ sender: UIButton) {
+        displayLoading(message: "", hasBg: true)
         presenter.compare(imageShow.image ?? UIImage())
 //        presenter.searchToFirebase()
     }
@@ -37,6 +39,10 @@ class MainVC: BaseVC {
 }
 
 extension MainVC: MainVCProtocol {
+    
+    func redirectToResultPage(listData: String) {
+        router.redirectToResult(name: listData)
+    }
     
 }
 
