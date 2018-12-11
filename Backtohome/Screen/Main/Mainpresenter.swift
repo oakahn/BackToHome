@@ -1,6 +1,7 @@
 import Foundation
 import Alamofire
-import Firebase
+import FirebaseDatabase
+import ObjectMapper
 
 protocol MainPresenterProtocol {
     func compare(_ image: UIImage)
@@ -10,10 +11,11 @@ protocol MainPresenterProtocol {
 class MainPresenter {
     
     var view: MainVCProtocol?
-    var database: DatabaseReference?
+    var dbReference: DatabaseReference?
     
     init(_ view: MainVCProtocol) {
         self.view = view
+        dbReference = Database.database().reference()
     }
 }
 
@@ -42,6 +44,13 @@ extension MainPresenter: MainPresenterProtocol {
                 upload.responseJSON { response in
                     if let JSON = response.result.value {
                         print(JSON)
+                        guard let detail = Mapper<FaceSearch>().map(JSONObject: JSON) else { return }
+                        guard let results = detail.results else {
+                            return
+                        }
+                        print(detail)
+                        print(results)
+                        print(results[0].confidence)
                     }
                 }
                 
@@ -53,6 +62,11 @@ extension MainPresenter: MainPresenterProtocol {
     }
     
     func searchToFirebase() {
-        
+        dbReference?.observeSingleEvent(of: .value, with: { (snapshot) in
+            guard var dictionary = snapshot.value as? [String] else {
+                return
+            }
+            self.dbReference?.child("f437fd2c440480150d3f1b703a29973a").setValue(["P'maii", "Noomaii", "Todsob"])
+        })
     }
 }

@@ -23,6 +23,7 @@ class MainVC: BaseVC {
     
     @IBAction func compareButton(_ sender: UIButton) {
         presenter.compare(imageShow.image ?? UIImage())
+//        presenter.searchToFirebase()
     }
     
     func getCamera() {
