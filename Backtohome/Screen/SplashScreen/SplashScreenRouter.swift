@@ -9,7 +9,9 @@
 import Foundation
 
 class SplashScreenRouter: BaseRouter {
+    
     func redirectToMainPage() {
-        redirectTo(name: self.)
+        redirectTo(name: self.main)
     }
+    
 }

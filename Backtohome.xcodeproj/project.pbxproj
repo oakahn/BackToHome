@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		344734DF143A5ABD22F08539 /* Pods_Backtohome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97472E1E795E0F635C46724A /* Pods_Backtohome.framework */; };
 		9C31306621BF5F8000B67CC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C31306521BF5F8000B67CC0 /* AppDelegate.swift */; };
-		9C31306821BF5F8000B67CC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C31306721BF5F8000B67CC0 /* ViewController.swift */; };
-		9C31306B21BF5F8000B67CC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C31306921BF5F8000B67CC0 /* Main.storyboard */; };
 		9C31306D21BF5F8200B67CC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C31306C21BF5F8200B67CC0 /* Assets.xcassets */; };
 		9C31307021BF5F8200B67CC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C31306E21BF5F8200B67CC0 /* LaunchScreen.storyboard */; };
 		9C31307E21BF61C800B67CC0 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C31307D21BF61C800B67CC0 /* SplashScreen.storyboard */; };
@@ -46,6 +44,8 @@
 		9C3130C821BF64B600B67CC0 /* Kanit-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130B521BF64B600B67CC0 /* Kanit-SemiBold.ttf */; };
 		9C3130C921BF64B600B67CC0 /* Kanit-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130B621BF64B600B67CC0 /* Kanit-Thin.ttf */; };
 		9C3130CC21BF65E300B67CC0 /* SplashScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3130CB21BF65E300B67CC0 /* SplashScreenRouter.swift */; };
+		9C3130CF21BF675B00B67CC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3130CE21BF675B00B67CC0 /* Main.storyboard */; };
+		9C3130D121BF679500B67CC0 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3130D021BF679500B67CC0 /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,8 +53,6 @@
 		97472E1E795E0F635C46724A /* Pods_Backtohome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Backtohome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C31306221BF5F8000B67CC0 /* Backtohome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Backtohome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C31306521BF5F8000B67CC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C31306721BF5F8000B67CC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9C31306A21BF5F8000B67CC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C31306C21BF5F8200B67CC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C31306F21BF5F8200B67CC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C31307121BF5F8200B67CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +89,8 @@
 		9C3130B521BF64B600B67CC0 /* Kanit-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-SemiBold.ttf"; sourceTree = "<group>"; };
 		9C3130B621BF64B600B67CC0 /* Kanit-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Thin.ttf"; sourceTree = "<group>"; };
 		9C3130CB21BF65E300B67CC0 /* SplashScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenRouter.swift; sourceTree = "<group>"; };
+		9C3130CE21BF675B00B67CC0 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9C3130D021BF679500B67CC0 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FE0005F873C19A38DB192FCC /* Pods-Backtohome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backtohome.release.xcconfig"; path = "Pods/Target Support Files/Pods-Backtohome/Pods-Backtohome.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,8 +148,6 @@
 				9C3130A321BF64A900B67CC0 /* Font */,
 				9C31307721BF615600B67CC0 /* BaseClass */,
 				9C31306521BF5F8000B67CC0 /* AppDelegate.swift */,
-				9C31306721BF5F8000B67CC0 /* ViewController.swift */,
-				9C31306921BF5F8000B67CC0 /* Main.storyboard */,
 				9C31306C21BF5F8200B67CC0 /* Assets.xcassets */,
 				9C31306E21BF5F8200B67CC0 /* LaunchScreen.storyboard */,
 				9C31307121BF5F8200B67CC0 /* Info.plist */,
@@ -214,9 +212,19 @@
 		9C3130CA21BF64D000B67CC0 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				9C3130CD21BF674400B67CC0 /* Main */,
 				9C31307C21BF61A900B67CC0 /* SplashScreen */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		9C3130CD21BF674400B67CC0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9C3130CE21BF675B00B67CC0 /* Main.storyboard */,
+				9C3130D021BF679500B67CC0 /* MainVC.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C3130BF21BF64B600B67CC0 /* OFL.txt in Resources */,
+				9C3130CF21BF675B00B67CC0 /* Main.storyboard in Resources */,
 				9C31307021BF5F8200B67CC0 /* LaunchScreen.storyboard in Resources */,
 				9C3130BA21BF64B600B67CC0 /* Kanit-MediumItalic.ttf in Resources */,
 				9C31309F21BF62E300B67CC0 /* LoadingXibView.xib in Resources */,
@@ -287,7 +296,6 @@
 				9C31306D21BF5F8200B67CC0 /* Assets.xcassets in Resources */,
 				9C3130B921BF64B600B67CC0 /* Kanit-BoldItalic.ttf in Resources */,
 				9C3130C121BF64B600B67CC0 /* Kanit-Italic.ttf in Resources */,
-				9C31306B21BF5F8000B67CC0 /* Main.storyboard in Resources */,
 				9C3130C221BF64B600B67CC0 /* Kanit-Light.ttf in Resources */,
 				9C3130BB21BF64B600B67CC0 /* Kanit-ExtraBold.ttf in Resources */,
 				9C3130C421BF64B600B67CC0 /* Kanit-LightItalic.ttf in Resources */,
@@ -359,8 +367,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C31309D21BF62E300B67CC0 /* Alert.swift in Sources */,
+				9C3130D121BF679500B67CC0 /* MainVC.swift in Sources */,
 				9C3130A121BF62E300B67CC0 /* BasePresenter.swift in Sources */,
-				9C31306821BF5F8000B67CC0 /* ViewController.swift in Sources */,
 				9C3130A021BF62E300B67CC0 /* Color.swift in Sources */,
 				9C3130A221BF62E300B67CC0 /* UiApplication.swift in Sources */,
 				9C3130CC21BF65E300B67CC0 /* SplashScreenRouter.swift in Sources */,
@@ -378,14 +386,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9C31306921BF5F8000B67CC0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C31306A21BF5F8000B67CC0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9C31306E21BF5F8200B67CC0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
